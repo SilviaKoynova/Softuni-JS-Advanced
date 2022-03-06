@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <h1 id="title">Dom introduction</h1>
+    <h2> Js dom </h2>
+    <button onclick="">Click me</button>
+    <ul>
+        <li class="row">Dom methods example</li>
+        <li class="row">Dom Porperties Example</li>
+    </ul>
+    <div>
+        <p>Line 1</p>
+        <p>Line 2</p>
+        Line 3
+    </div>
+    <p>Im a language</p>
+    <script>
+        function editElement(ref, match, replacer){
+            const content = ref.textContent;
+            const matcher = new RegExp(match, 'g');
+            const edited = content.replace(matcher, replacer);
+            ref.textContent = edited
+        }
+    </script>
+    
+</body>
+</html>
